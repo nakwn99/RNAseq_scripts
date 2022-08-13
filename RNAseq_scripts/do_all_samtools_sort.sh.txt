@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in SRR*.sam
+do
+./do_samtools_sort.py ${i%.sam}
+done

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in SRR*.fastq.gz
+#for i in SB*.fastq.gz
+
+do
+./do_hisat2_pair_py3.py ${i%.fastq.gz}
+
+done

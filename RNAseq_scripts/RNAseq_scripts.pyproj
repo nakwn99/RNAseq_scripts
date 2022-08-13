@@ -21,13 +21,25 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="do_featureCounts_pairEnd.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="do_featureCounts_singleEnd.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="do_hisat2_pair_py3.py" />
+    <Compile Include="do_hisat2_singleEnd_py3.py" />
+    <Compile Include="do_samtools_for_IGV.py" />
+    <Compile Include="do_stringtie_step1.py" />
+    <Compile Include="do_stringtie_step3.py" />
     <Compile Include="RNAseq_scripts.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="do_all_fastqc.sh.txt" />
     <Content Include="do_all_featureCounts_pairEnd.sh.txt" />
     <Content Include="do_all_featureCounts_singleEnd.sh.txt" />
-    <Content Include="do_all_hisat2_py27singleEnd.sh.txt" />
+    <Content Include="do_all_hisat2_singleEnd.sh.txt" />
+    <Content Include="do_all_pair_hisat2_pairEnd.sh.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

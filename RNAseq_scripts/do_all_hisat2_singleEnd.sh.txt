@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for i in SRR*.fastq.gz
+#for i in DRR*.fastq
+#for i in trimmed*.fastq.gz
+
+do
+
+./do_hisat2_singleEnd_py3.py ${i%.fastq.gz}
+#./do_hisat2_singleEnd_py3.py ${i%.fastq}
+
+done
+
