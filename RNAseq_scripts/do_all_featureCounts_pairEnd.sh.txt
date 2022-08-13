@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ls SRR*.sam > samlist.txt
+./do_featureCounts_pairEnd.py
+

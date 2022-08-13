@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ls SRR*.sam > samlist.txt
+#ls trim*.sam > samlist.txt
+./do_featureCounts_singleEnd.py
+

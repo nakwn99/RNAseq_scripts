@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in SRR*.fastq.gz
+#for i in *.fastq
+#for i in *.fastq.gz
+
+do
+#echo "fastqc $i"
+fastqc $i
+done

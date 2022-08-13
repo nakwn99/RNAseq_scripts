@@ -1,0 +1,11 @@
+#!/bin/bash
+conda activate py27
+
+for i in trimmed_*.fastq
+do
+#echo "$i ${i%jpg} gif"
+#echo "do_hisat2_se.py ${i%.fastq}"
+./do_hisat2_se_py27.py ${i%.fastq}
+done
+
+conda deactivate
